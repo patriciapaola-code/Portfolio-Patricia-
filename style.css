@@ -136,14 +136,19 @@ body{
     0 0 15px #ff2fb3;
 }
 
+/* ===== TEXTO BRANCO ABAIXO DO NOME ===== */
+
 .hero-text h3{
     margin-top:10px;
 
     font-size:1.3rem;
 
-    color:#d9b3ff;
+    color:white;
 
     font-weight:500;
+
+    text-shadow:
+    0 0 10px rgba(255,255,255,0.4);
 }
 
 .hero-text p{
