@@ -1,8 +1,14 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+.menu{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .menu{
+        display:none;
+    }
 }
 
 body{
