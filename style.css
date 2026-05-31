@@ -305,28 +305,13 @@ body{
 /* ================= LINKS DOS PROJETOS ================= */
 
 .project-link{
-    display:inline-block;
-
-    margin-top:20px;
-
-    padding:10px 18px;
-
-    border-radius:15px;
-
-    background:#ff2fb3;
-
-    color:white;
-
-    text-decoration:none;
-
-    transition:0.3s;
+    cursor:pointer;
+    border:none;
+    font-size:1rem;
 }
 
-.project-link:hover{
-    transform:translateY(-4px);
-
-    box-shadow:
-    0 0 20px #ff2fb3;
+button.project-link{
+    font-family:inherit;
 }
 
 /* ================= CONTATO ================= */
