@@ -132,32 +132,39 @@ body{
 
 /* ===== NOME ROSA COM GLOW ===== */
 
-.hero-text h1{
-    font-size:4rem;
+.hero-text{
+    max-width:600px;
+}
+
+/* ===== TÍTULOS H1 E H2 COM GLOW ROSA ===== */
+
+.hero-text h1,
+.hero-text h2{
 
     color:#ff2fb3;
 
     text-shadow:
-    0 0 10px #ff2fb3,
-    0 0 20px #ff2fb3,
-    0 0 40px rgba(255,47,179,0.7);
-}
+        0 0 10px #ff2fb3,
+        0 0 20px #ff2fb3,
+        0 0 40px rgba(255,47,179,0.7);
 
-/* ===== TEXTO BRANCO COM GLOW ===== */
-
-.hero-text h3{
     margin-top:10px;
-
-    font-size:1.3rem;
-
-    color:white;
-
-    font-weight:500;
-
-    text-shadow:
-    0 0 8px rgba(255,255,255,0.8),
-    0 0 15px rgba(255,255,255,0.5);
 }
+
+/* NOME PRINCIPAL */
+
+.hero-text h1{
+    font-size:4rem;
+}
+
+/* SUBTÍTULOS */
+
+.hero-text h2{
+    font-size:1.3rem;
+    font-weight:500;
+}
+
+/* TEXTO DESCRITIVO */
 
 .hero-text p{
     margin-top:20px;
@@ -168,7 +175,6 @@ body{
 
     font-size:1.05rem;
 }
-
 /* ================= BOTÕES ================= */
 
 .buttons{
