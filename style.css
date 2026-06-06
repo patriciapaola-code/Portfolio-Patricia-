@@ -257,6 +257,12 @@ body{
 
     display:inline-block;
 
+    min-width:170px;
+
+    text-align:center;
+
+    white-space:nowrap;
+    
     padding:14px 28px;
 
     padding:8px 30px;
