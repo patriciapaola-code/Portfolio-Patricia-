@@ -189,8 +189,10 @@ body{
 
     color:#ff2fb3;
 
-    line-height:1.1;
+    line-height:1;
 
+    display:inline-block;
+    
     margin-bottom:10px;
 
     animation:glowPulse 3s infinite ease-in-out;
