@@ -4,7 +4,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 
 html{
@@ -12,8 +12,17 @@ html{
 }
 
 body{
+
     background:
-    radial-gradient(circle at top,#1a001a,#000000);
+        radial-gradient(circle at top left,
+        rgba(255,47,179,.15),
+        transparent 40%),
+
+        radial-gradient(circle at top right,
+        rgba(217,70,239,.10),
+        transparent 40%),
+
+        #050505;
 
     color:white;
 
@@ -23,222 +32,289 @@ body{
 /* ================= HEADER ================= */
 
 .header{
+
     position:fixed;
-    width:100%;
+
     top:0;
+
+    width:100%;
+
     z-index:1000;
 
     background:rgba(0,0,0,0.5);
 
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(15px);
 
     border-bottom:
-    1px solid rgba(255,47,179,0.2);
+    1px solid rgba(255,47,179,.2);
 }
 
 .nav{
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     padding:18px 50px;
 }
 
 .logo{
-    font-size:1.3rem;
-    font-weight:bold;
+
+    font-size:1.5rem;
+
+    font-weight:700;
 
     color:#ff2fb3;
 
     letter-spacing:2px;
 
     text-shadow:
-    0 0 10px #ff2fb3;
+        0 0 10px #ff2fb3,
+        0 0 20px #ff2fb3;
 }
 
 .menu{
+
     display:flex;
+
     list-style:none;
+
     gap:25px;
 }
 
 .menu a{
+
     color:white;
+
     text-decoration:none;
 
-    transition:0.3s;
+    transition:.3s;
 }
 
 .menu a:hover{
+
     color:#ff2fb3;
 
-    text-shadow:0 0 10px #ff2fb3;
+    text-shadow:
+        0 0 10px #ff2fb3;
 }
 
 /* ================= HERO ================= */
 
 .hero{
+
     min-height:100vh;
 
     display:flex;
+
     align-items:center;
+
     justify-content:flex-start;
 
     padding:120px 8%;
 }
 
 .hero-content{
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
 
-    gap:40px;
+    display:flex;
+
+    align-items:center;
+
+    gap:50px;
 
     max-width:1200px;
 
     width:100%;
-
-    margin-left:-40px;
 }
 
 /* ================= FOTO ================= */
 
 .foto-perfil{
-    width:210px;
-    height:210px;
 
-    border-radius:50%;
+    width:260px;
+
+    height:260px;
 
     object-fit:cover;
 
-    border:5px solid #ff2fb3;
+    border-radius:50%;
+
+    border:4px solid #ff2fb3;
 
     box-shadow:
-    0 0 25px #ff2fb3,
-    0 0 60px rgba(255,47,179,0.5);
+        0 0 25px #ff2fb3,
+        0 0 50px #ff2fb3,
+        0 0 100px rgba(255,47,179,.4);
 
-    transition:0.4s;
+    transition:.4s;
 }
 
 .foto-perfil:hover{
+
     transform:scale(1.05);
 }
 
-/* ================= TEXTO HERO ================= */
-
+/* ================= HERO TEXT ================= */
 .hero-text{
-    max-width:600px;
+
+    max-width:650px;
 }
 
-/* ===== NOME ROSA COM GLOW ===== */
+.hero-text h1{
 
-.hero-text{
-    max-width:600px;
-}
+    font-size:4.5rem;
 
-/* ===== TÍTULOS H1 E H2 COM GLOW ROSA ===== */
-
-.hero-text h1,
-.hero-text h2{
+    font-weight:800;
 
     color:#ff2fb3;
+
+    line-height:1.1;
+
+    animation:glowPulse 3s infinite ease-in-out;
 
     text-shadow:
         0 0 10px #ff2fb3,
         0 0 20px #ff2fb3,
-        0 0 40px rgba(255,47,179,0.7);
-
-    margin-top:10px;
-}
-
-/* NOME PRINCIPAL */
-
-.hero-text h1{
-    font-size:4rem;
+        0 0 40px #ff2fb3,
+        0 0 80px rgba(255,47,179,.7);
 }
 
 /* SUBTÍTULOS */
 
 .hero-text h2{
-    font-size:1.3rem;
+
+    margin-top:15px;
+
+    font-size:1.4rem;
+
     font-weight:500;
+
+    color:#ffffff;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,.9),
+        0 0 15px rgba(255,255,255,.7),
+        0 0 30px rgba(255,255,255,.4);
 }
 
-/* TEXTO DESCRITIVO */
-
 .hero-text p{
-    margin-top:20px;
+
+    margin-top:25px;
+
+    color:#d6d6d6;
 
     line-height:1.8;
 
-    color:#cccccc;
-
     font-size:1.05rem;
 }
+
+/* EFEITO DE PULSAÇÃO DO NOME */
+
+@keyframes glowPulse{
+
+    0%{
+        text-shadow:
+            0 0 10px #ff2fb3,
+            0 0 20px #ff2fb3,
+            0 0 40px #ff2fb3;
+    }
+
+    50%{
+        text-shadow:
+            0 0 15px #ff2fb3,
+            0 0 35px #ff2fb3,
+            0 0 60px #ff2fb3;
+    }
+
+    100%{
+        text-shadow:
+            0 0 10px #ff2fb3,
+            0 0 20px #ff2fb3,
+            0 0 40px #ff2fb3;
+    }
+}
+
 /* ================= BOTÕES ================= */
 
 .buttons{
-    margin-top:30px;
+
+    margin-top:35px;
 }
 
 .btn{
+
     display:inline-block;
 
-    padding:12px 22px;
+    padding:14px 28px;
 
     margin-right:15px;
 
     border-radius:30px;
 
-    background:#ff2fb3;
+    text-decoration:none;
 
     color:white;
 
-    text-decoration:none;
+    background:linear-gradient(
+        45deg,
+        #ff2fb3,
+        #d946ef
+    );
 
-    transition:0.3s;
+    font-weight:600;
+
+    transition:.3s;
 
     box-shadow:
-    0 0 20px rgba(255,47,179,0.5);
+        0 0 20px rgba(255,47,179,.5);
 }
 
 .btn:hover{
+
     transform:
     translateY(-5px);
 
     box-shadow:
-    0 0 30px #ff2fb3;
+        0 0 30px #ff2fb3,
+        0 0 50px rgba(255,47,179,.5);
 }
 
 .btn.outline{
+
     background:transparent;
 
-    border:1px solid #ff2fb3;
+    border:2px solid #ff2fb3;
 }
 
 /* ================= SECTIONS ================= */
 
 .section{
+
     padding:100px 10%;
 
     text-align:center;
 }
 
 .section h2{
-    font-size:2.5rem;
+
+    font-size:2.6rem;
 
     margin-bottom:30px;
 
     color:#ff2fb3;
 
     text-shadow:
-    0 0 12px rgba(255,47,179,0.6);
+        0 0 10px #ff2fb3,
+        0 0 30px rgba(255,47,179,.6);
 }
 
 .section p{
-    line-height:1.8;
 
     color:#d1d1d1;
+
+    line-height:1.8;
 
     max-width:900px;
 
@@ -248,6 +324,7 @@ body{
 /* ================= GRID ================= */
 
 .grid{
+
     display:flex;
 
     justify-content:center;
@@ -262,6 +339,7 @@ body{
 /* ================= CARDS ================= */
 
 .card{
+
     width:320px;
 
     padding:30px;
@@ -269,46 +347,47 @@ body{
     border-radius:25px;
 
     background:
-    rgba(255,255,255,0.05);
+    rgba(255,255,255,.04);
 
     border:
-    1px solid rgba(255,47,179,0.2);
+    1px solid rgba(255,47,179,.25);
 
-    backdrop-filter:blur(12px);
+    backdrop-filter:blur(15px);
 
-    transition:0.4s;
-
-    transform-style:preserve-3d;
+    transition:.4s;
 
     box-shadow:
-    0 0 25px rgba(255,47,179,0.15);
+        0 0 20px rgba(255,47,179,.15),
+        inset 0 0 20px rgba(255,47,179,.03);
 }
 
 .card:hover{
+
     transform:
-    perspective(1000px)
-    rotateY(10deg)
-    rotateX(8deg)
-    translateY(-10px);
+        translateY(-12px);
 
     box-shadow:
-    0 0 40px #ff2fb3;
+        0 0 15px #ff2fb3,
+        0 0 40px rgba(255,47,179,.6);
 }
 
 .card h3{
+
     color:#ff2fb3;
 
     margin-bottom:15px;
 
     text-shadow:
-    0 0 10px rgba(255,47,179,0.5);
+        0 0 10px rgba(255,47,179,.5);
 }
 
 .card p{
-    color:#d8d8d8;
+
+    color:#d6d6d6;
 }
 
 /* ================= LINKS DOS PROJETOS ================= */
+
 .project-link{
 
     display:inline-block;
@@ -317,24 +396,24 @@ body{
 
     padding:12px 24px;
 
+    border-radius:30px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
     background:linear-gradient(
         45deg,
         #ff2fb3,
         #d946ef
     );
 
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    border-radius:30px;
+    transition:.3s;
 
     box-shadow:
-        0 0 15px rgba(255,47,179,0.5);
-
-    transition:all .3s ease;
+        0 0 15px rgba(255,47,179,.5);
 }
 
 .project-link:hover{
@@ -342,27 +421,54 @@ body{
     transform:translateY(-4px);
 
     box-shadow:
-        0 0 25px rgba(255,47,179,0.8);
-
-    color:white;
+        0 0 30px rgba(255,47,179,.8);
 }
+
 /* ================= CONTATO ================= */
 
 #contato p{
+
     margin-top:15px;
 }
 
 #contato a{
+
     color:#ff2fb3;
 
     text-decoration:none;
-
-    transition:0.3s;
 }
 
 #contato a:hover{
+
     text-shadow:
-    0 0 10px #ff2fb3;
+        0 0 10px #ff2fb3;
+}
+
+/* ================= ANIMAÇÃO ================= */
+
+@keyframes glowPulse{
+
+    0%{
+
+        text-shadow:
+            0 0 10px #ff2fb3,
+            0 0 20px #ff2fb3;
+    }
+
+    50%{
+
+        text-shadow:
+            0 0 20px #ff2fb3,
+            0 0 40px #ff2fb3,
+            0 0 80px #ff2fb3;
+    }
+
+    100%{
+
+        text-shadow:
+            0 0 10px #ff2fb3,
+            0 0 20px #ff2fb3;
+    }
 }
 
 /* ================= RESPONSIVO ================= */
@@ -370,56 +476,62 @@ body{
 @media(max-width:900px){
 
     .hero-content{
+
         flex-direction:column;
 
         text-align:center;
-
-        margin-left:0;
     }
 
     .hero-text h1{
-        font-size:3rem;
+
+        font-size:3.2rem;
     }
 
     .foto-perfil{
-        width:180px;
-        height:180px;
+
+        width:220px;
+        height:220px;
     }
 
     .nav{
-        padding:15px 20px;
-    }
 
-    .menu{
-        gap:12px;
+        padding:15px 20px;
     }
 }
 
 @media(max-width:768px){
 
     .menu{
+
         display:none;
     }
 
     .hero{
+
         padding-top:140px;
     }
 
     .hero-text h1{
+
         font-size:2.5rem;
     }
 
-    .hero-text h3{
+    .hero-text h2{
+
         font-size:1.1rem;
     }
 
     .grid{
+
         flex-direction:column;
+
         align-items:center;
     }
 
     .card{
+
         width:100%;
+
         max-width:350px;
     }
 }
