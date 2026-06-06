@@ -157,20 +157,28 @@ body{
 }
 
 /* ================= HERO TEXT ================= */
+
+   
+  /* ================= HERO TEXT ================= */
+
 .hero-text{
 
     max-width:650px;
 }
 
-.hero-text h2{
+/* NOME PRINCIPAL */
 
-    font-size:4.5rem;
+.hero-text h1{
+
+    font-size:4.8rem;
 
     font-weight:800;
 
     color:#ff2fb3;
 
     line-height:1.1;
+
+    margin-bottom:10px;
 
     animation:glowPulse 3s infinite ease-in-out;
 
@@ -185,13 +193,15 @@ body{
 
 .hero-text h2{
 
-    margin-top:15px;
+    margin-top:10px;
 
     font-size:1.4rem;
 
     font-weight:500;
 
     color:#ffffff;
+
+    line-height:1.6;
 
     text-shadow:
         0 0 8px rgba(255,255,255,.9),
@@ -208,32 +218,6 @@ body{
     line-height:1.8;
 
     font-size:1.05rem;
-}
-
-/* EFEITO DE PULSAÇÃO DO NOME */
-
-@keyframes glowPulse{
-
-    0%{
-        text-shadow:
-            0 0 10px #ff2fb3,
-            0 0 20px #ff2fb3,
-            0 0 40px #ff2fb3;
-    }
-
-    50%{
-        text-shadow:
-            0 0 15px #ff2fb3,
-            0 0 35px #ff2fb3,
-            0 0 60px #ff2fb3;
-    }
-
-    100%{
-        text-shadow:
-            0 0 10px #ff2fb3,
-            0 0 20px #ff2fb3,
-            0 0 40px #ff2fb3;
-    }
 }
 
 /* ================= BOTÕES ================= */
