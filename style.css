@@ -133,6 +133,16 @@ body{
 
 .foto-perfil{
 
+
+    width:240px;
+    height:240px;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
     width:260px;
 
     height:260px;
@@ -188,7 +198,7 @@ body{
     font-weight:800;
 
     color:#ff2fb3;
-    
+
     white-space: nowrap;
 
     line-height:1;
