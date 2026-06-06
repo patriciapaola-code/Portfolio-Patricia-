@@ -13,6 +13,11 @@ html{
 
 body{
 
+    font-weight:600;
+}
+
+body{
+
     background:
         radial-gradient(circle at top left,
         rgba(255,47,179,.15),
