@@ -477,19 +477,19 @@ body{
 }
 
 
-#contato p{
+#contatos p{
 
     margin-top:15px;
 }
 
-#contato a{
+#contatos a{
 
     color:#ff2fb3;
 
     text-decoration:none;
 }
 
-#contato a:hover{
+#contatos a:hover{
 
     text-shadow:
         0 0 10px #ff2fb3;
