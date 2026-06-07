@@ -461,6 +461,22 @@ body{
 
 /* ================= CONTATO ================= */
 
+
+#contatos h4{
+
+    margin-top:10px;
+
+    font-weight:500;
+
+    color:#ffffff;
+
+    line-height:1.7;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,.4);
+}
+
+
 #contato p{
 
     margin-top:15px;
@@ -477,20 +493,6 @@ body{
 
     text-shadow:
         0 0 10px #ff2fb3;
-}
-
-#contatos h4{
-
-    margin-top:10px;
-
-    font-weight:500;
-
-    color:#ffffff;
-
-    line-height:1.7;
-
-    text-shadow:
-        0 0 8px rgba(255,255,255,.4);
 }
 
 /* ================= ANIMAÇÃO ================= */
