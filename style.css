@@ -586,3 +586,95 @@ body{
         max-width:350px;
     }
 }
+
+/* PAINEL HERO */
+
+.hero-side{
+
+    margin-top:35px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+}
+
+.highlight-card{
+
+    width:220px;
+
+    padding:18px;
+
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,.04);
+
+    border:
+    1px solid rgba(255,47,179,.25);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:
+    0 0 15px rgba(255,47,179,.15);
+
+    transition:.3s;
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 25px rgba(255,47,179,.5);
+}
+
+.highlight-card span{
+
+    font-size:2rem;
+}
+
+.highlight-card h4{
+
+    margin-top:10px;
+
+    color:#ff2fb3;
+}
+
+.highlight-card p{
+
+    margin-top:8px;
+
+    color:#d8d8d8;
+
+    font-size:.9rem;
+}
+
+.tech-badges{
+
+    width:100%;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+}
+
+.tech-badges span{
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,47,179,.08);
+
+    border:
+    1px solid rgba(255,47,179,.25);
+
+    color:#ff2fb3;
+
+    font-size:.85rem;
+}
