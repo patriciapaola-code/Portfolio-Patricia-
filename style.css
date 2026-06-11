@@ -667,3 +667,50 @@ body{
 
     min-height:140px;
 }
+
+/* ===== TECNOLOGIAS ===== */
+
+.tech-badges{
+
+    width:100%;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:10px;
+}
+
+.tech-badges span{
+
+    display:inline-block;
+
+    padding:8px 15px;
+
+    border-radius:25px;
+
+    background:rgba(255,47,179,0.08);
+
+    border:1px solid rgba(255,47,179,0.25);
+
+    color:#ff2fb3;
+
+    font-size:0.85rem;
+
+    font-weight:500;
+
+    box-shadow:
+        0 0 10px rgba(255,47,179,0.15);
+
+    transition:0.3s;
+}
+
+.tech-badges span:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 0 15px rgba(255,47,179,0.4);
+}
