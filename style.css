@@ -668,3 +668,27 @@ body{
     min-height:140px;
 }
 
+/* ===== FORMATO EM VOLTA DAS PALAVRAS DESTAQUE ===== */
+.tag-palavra {
+    display: inline-block;             /* Faz a forma abraçar o tamanho exato da palavra */
+    padding: 4px 14px;                 /* Espaçamento interno para dar a forma (cima/baixo e lados) */
+    margin: 3px 5px;                   /* Distância sutil para não encavalar com as palavras vizinhas */
+    border-radius: 50px;               /* Deixa os cantos completamente arredondados */
+    background: rgba(255, 47, 179, 0.1); /* Um fundo rosa bem transparente e elegante */
+    border: 1px solid rgba(255, 47, 179, 0.6); /* Borda rosa neon em volta da palavra */
+    color: #ffffff;                    /* Mantém a palavra branca */
+    font-weight: 700;                  /* Deixa a palavra em negrito para destacar */
+    font-size: 0.95rem;                /* Tamanho ideal para acompanhar o texto */
+    text-shadow: 0 0 5px rgba(255, 47, 179, 0.5); /* Um leve brilho neon na palavra */
+    transition: all 0.3s ease;         /* Transição suave para o efeito do mouse */
+    cursor: default;
+}
+
+/* Efeito lindo quando passa o mouse por cima de cada palavra */
+.tag-palavra:hover {
+    transform: translateY(-2px);        /* Sobe a palavra levemente */
+    background: #ff2fb3;               /* Preenche o fundo com o rosa neon */
+    color: #000000;                    /* Muda a letra para preto para dar contraste total */
+    box-shadow: 0 0 15px #ff2fb3;      /* Efeito de brilho aceso em volta */
+    border-color: #ff2fb3;
+}
